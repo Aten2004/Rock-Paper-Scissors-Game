@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="rock-paper-scissors.png">
+  <title>Rock Paper Scissors Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="result_field">
+      <div class="round" id="round">Round 0</div>
+      <div class="score" id="score"> Score <br>
+        <span class="team-label">User</span>&emsp;&emsp; 0 : 0 &emsp;&emsp;
+        <span class="team-label">Cpu</span>
+      </div>      
+      <div class="result_images">
+        <span class="user_result">
+          <img src="rock.png" alt="" />
+        </span>
+        <span class="cpu_result">
+          <img src="rock.png" alt="" />
+        </span>
+      </div>
+      <div class="result">Let's Play!!</div>
+    </div>
+
+    <div class="option_images">
+      <span class="option_image">
+        <img src="rock.png" alt="">
+        <p>Rock</p>
+      </span>
+      <span class="option_image">
+        <img src="paper.png" alt="">
+        <p>Paper</p>
+      </span>
+      <span class="option_image">
+        <img src="scissors.png" alt="">
+        <p>Scissors</p>
+      </span>
+    </div>
+
+    <form name="my-select" action="" method="post" class="box">
+      <span class="text">เลือกจำนวนครั้งที่ต้องการ</span>
+      <div class="select" id="select">
+        <select id="number" name="number">
+          <option value="Unlimited">เล่นไม่จำกัด</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="10">10</option>
+        </select>
+        <button type="button" onclick="getValue()">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>
